@@ -51,8 +51,6 @@
     "chai": "3.5.0",
     "glob": "7.1.1",
     "minimist": "1.2.0",
-    "mocha-simple-html-reporter": "1.0.1",
-    "mochawesome": "2.0.4",
     "wdio-mocha-framework": "0.5.9",
     "wdio-screenshot": "0.5.2",
     "wdio-spec-reporter": "0.1.0",
