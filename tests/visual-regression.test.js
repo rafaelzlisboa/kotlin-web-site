@@ -57,7 +57,7 @@ describe('Visual regression', () => {
       return;
     }
 
-    const reportFilepath = Path.resolve(__dirname, '../report/regression-report.html');
+    const reportFilepath = Path.resolve(__dirname, '../visual-regression-report/report.html');
     const regressions = report.filter(item => item.type === 'regression');
     const notFounds = report.filter(item => item.type === 'element_not_found');
 
