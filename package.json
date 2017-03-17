@@ -70,7 +70,7 @@
     "clean": "rimraf ./_assets",
     "start-selenium-server": "docker run -d -p 4444:4444 --name=selenium-standalone selenium/standalone-chrome:3.0.1-germanium",
     "stop-selenium-server": "CONTAINER_ID=$(docker ps --filter \"name=selenium-standalone\" --format \"{{.ID}}\") && docker stop $CONTAINER_ID && docker rm --force $CONTAINER_ID",
-    "file-scanner": "node scripts/file-scanner.js --output=paths.txt",
+    "file-scanner": "node scripts/file-scanner.js",
     "visual-regression-test": "wdio --spec=tests/visual-regression.test.js"
   }
 }
