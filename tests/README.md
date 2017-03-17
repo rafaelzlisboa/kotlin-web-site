@@ -28,4 +28,9 @@ Visual regression testing
     npm run visual-regression-test -- --paths=paths.txt --baseUrl=http://staging.kotlinlang.org.s3-website-eu-west-1.amazonaws.com
     ```
 
-5. Check out `report/regression-report.html` to see report.  
+5. Check out `report/regression-report.html` to see report.
+
+6. Stop Selenium server: 
+   ```
+   npm run stop-selenium-server
+   ```
