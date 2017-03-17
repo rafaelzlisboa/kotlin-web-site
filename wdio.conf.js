@@ -49,8 +49,7 @@ const config = {
   framework: 'mocha',
   mochaOpts: {
     ui: 'bdd',
-    timeout: 60000,
-    reporter: 'mochawesome'
+    timeout: 60000
   },
 
   // http://webdriver.io/guide/testrunner/reporters.html
