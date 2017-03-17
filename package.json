@@ -48,7 +48,17 @@
     "whatwg-fetch": "2.0.2"
   },
   "devDependencies": {
+    "chai": "3.5.0",
+    "glob": "7.1.1",
     "minimist": "1.2.0",
+    "mocha-simple-html-reporter": "1.0.1",
+    "mochawesome": "2.0.4",
+    "wdio-mocha-framework": "0.5.9",
+    "wdio-screenshot": "0.5.2",
+    "wdio-spec-reporter": "0.1.0",
+    "wdio-teamcity-reporter": "1.1.1",
+    "wdio-visual-regression-service": "0.7.0",
+    "webdriverio": "4.6.2",
     "webpack-livereload-plugin": "0.4.0"
   },
   "repository": {
@@ -59,6 +69,9 @@
     "start": "rimraf ./_assets/* && cross-env NODE_ENV=development webpack --watch",
     "build": "rimraf ./_assets/* && cross-env NODE_ENV=production webpack",
     "postinstall": "cd node_modules/codemirror && npm i",
-    "clean": "rimraf ./_assets"
+    "clean": "rimraf ./_assets",
+    "start-selenium-server": "docker run -d -p 4444:4444 selenium/standalone-chrome:3.0.1-germanium",
+    "file-scanner": "node scripts/file-scanner.js --pattern=\"api/**/*.html\" --output=paths.txt",
+    "visual-regression-test": "wdio --spec=tests/visual-regression.test.js"
   }
 }
