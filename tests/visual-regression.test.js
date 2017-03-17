@@ -45,9 +45,8 @@ describe('Visual regression', () => {
             type: 'regression',
             amount: misMatchPercentage
           });
+          throw new Error(`Screenshots mismatched by ${misMatchPercentage}%`);
         }
-
-        isExactSameImage.should.be.equal(true, msg);
       });
     });
   });

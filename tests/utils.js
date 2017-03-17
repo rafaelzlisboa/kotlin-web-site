@@ -42,9 +42,9 @@ function screenshotNameGenerator(basePath) {
 
 function getVisualRegressionDirs() {
   return {
-    reference: path.join(process.cwd(), 'report/reference'),
-    current: path.join(process.cwd(), 'report/current'),
-    diff: path.join(process.cwd(), 'report/diff'),
+    reference: path.join(process.cwd(), 'visual-regression-report/reference'),
+    current: path.join(process.cwd(), 'visual-regression-report/current'),
+    diff: path.join(process.cwd(), 'visual-regression-report/diff'),
   }
 }
 
