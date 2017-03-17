@@ -34,3 +34,5 @@ Visual regression testing
    ```
    npm run stop-selenium-server
    ```
+   
+Further testing requires only step #4 (and running Selenium server).
