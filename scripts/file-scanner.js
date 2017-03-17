@@ -6,6 +6,10 @@ const glob = require('glob');
 const args = parseCLIArgs(process.argv.slice(2));
 const defaultRootDir = path.resolve(__dirname, '..');
 
+if (!args.pattern) {
+  throw new Error('--pattern=glob-pattern parameter is required');
+}
+
 const list = glob.sync(args.pattern, {
   nodir: true,
   root: args.root || defaultRootDir,
