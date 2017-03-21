@@ -32,7 +32,7 @@ describe('Visual regression', () => {
         throw new Error(`${captureSelector} not found at ${url}`);
       }
 
-      const results = browser.checkElement('.page-content');
+      const results = browser.checkElement(captureSelector);
 
       results.forEach((result) => {
         const {isExactSameImage, misMatchPercentage} = result;
